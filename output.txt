@@ -1,0 +1,36 @@
+
+ Activating the network ...
+
+ DEBUG : Network.run() - starting network thread
+
+ Initializing the server ...
+
+ Inializing the Accounts database ...
+
+ DEBUG : Server.initializeAccounts() 71 accounts processed
+
+ Connecting server to network ...
+
+ Initializing client sending application ...
+
+ Initializing the transactions ... 
+
+ DEBUG : Server.run() - starting server thread serverThread2 connected
+
+ DEBUG : Server.run() - starting server thread serverThread1 connected
+
+ DEBUG : Server.run() - starting server thread connected
+
+ DEBUG : Server.processTransactions() serverThread2
+
+ DEBUG : Server.run() - starting server thread connected
+
+ DEBUG : Server.processTransactions() serverThread1
+
+ DEBUG : Client.readTransactions() - 71 transactions processed
+
+ Connecting client to network ...
+
+ Initializing client receiving application ...
+
+ DEBUG : Client.sendTransactions() - sending transaction on account 31718
