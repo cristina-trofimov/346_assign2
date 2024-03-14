@@ -64,6 +64,7 @@ public class Network extends Thread {
                 
          networkStatus = "active";
 
+
          outBuffEmpty = new Semaphore(maxNbPackets);
          outBuffFull = new Semaphore(0);
          inBuffEmpty = new Semaphore(maxNbPackets);
