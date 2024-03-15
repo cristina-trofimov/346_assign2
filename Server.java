@@ -27,6 +27,7 @@ public class Server extends Thread {
 	private String serverThreadId;				 /* Identification of the two server threads - Thread1, Thread2 */
 	private static String serverThreadRunningStatus1;	 /* Running status of thread 1 - idle, running, terminated */
 	private static String serverThreadRunningStatus2;	 /* Running status of thread 2 - idle, running, terminated */
+    private static String serverThreadRunningStatus3;	 /* Running status of thread 3 - idle, running, terminated */
 
   
     /** 
@@ -55,14 +56,21 @@ public class Server extends Thread {
     			System.exit(0);
     		}
     	}
-    	else
-    	{
-    		serverThreadId = stid;							/* unshared variable so each thread has its own copy */
-    		serverThreadRunningStatus2 = "idle";
-			
-    	}
+    	else {
+            // Check if the second thread is already initialized
+            if (serverThreadRunningStatus2 == null) {
+                serverThreadId = stid;  // Assign the thread ID
+                serverThreadRunningStatus2 = "idle";  // Initialize the second thread's running status
+            } else {
+
+                serverThreadId = stid;  // Assign the thread ID
+                serverThreadRunningStatus3 = "idle";  // Initialize the third thread's running status
+
+
+            }
+        }
     }
-  
+
     /** 
      * Accessor method of Server class
      * 
@@ -194,6 +202,28 @@ public class Server extends Thread {
          { 
        	  serverThreadRunningStatus2 = runningStatus;
          }
+
+         /** 
+        * Accessor method of Server class
+        * 
+        * @return serverThreadRunningStatus1
+        * @param
+        */
+        public String getServerThreadRunningStatus3()
+        {
+            return serverThreadRunningStatus3;
+        }
+            
+       /** 
+        * Mutator method of Server class
+        * 
+        * @return 
+        * @param runningStatus
+        */
+        public void setServerThreadRunningStatus3(String runningStatus)
+        { 
+      	  serverThreadRunningStatus3 = runningStatus;
+        }
          
     /** 
      * Initialization of the accounts from an input file
@@ -448,7 +478,12 @@ public class Server extends Thread {
         	setServerThreadRunningStatus2("terminated");
         }
 
-        if(getServerThreadRunningStatus1().equals("terminated") && getServerThreadRunningStatus2().equals("terminated"))
+        if(getServerThreadId().equals("serverThread3"))
+        {
+        	setServerThreadRunningStatus3("terminated");
+        }
+
+        if(getServerThreadRunningStatus1().equals("terminated") && getServerThreadRunningStatus2().equals("terminated") && getServerThreadRunningStatus3().equals("terminated"))
         {
         	Network.disconnect(Network.getServerIP());		/* Disconnect the server */
         }
