@@ -19,8 +19,6 @@
 
  Account number 31718 Account Balance 100.0 Message done
 
- Account number 11528 Account Balance 500.0 Message done
-
  Account number 16783 Account Balance 8000.0 Message done
 
  Account number 10538 Account Balance 140000.0 Message done
@@ -29,7 +27,7 @@
 
  Account number 61326 Account Balance 1750.0 Message done
 
- Account number 82465 Account Balance 20000.0 Message done
+ Account number 11528 Account Balance 500.0 Message done
 
  Account number 31816 Account Balance 20500.0 Message done
 
@@ -38,6 +36,8 @@
  Account number 81514 Account Balance -200.0 Message done
 
  Account number 92012 Account Balance 750.0 Message done
+
+ Account number 82465 Account Balance 20000.0 Message done
 
  Account number 52853 Account Balance 1000.0 Message done
 
@@ -59,6 +59,8 @@
 
  Account number 39331 Account Balance 0.0 Message done
 
+ Account number 41911 Account Balance 1500.0 Message done
+
  Account number 91312 Account Balance 1000.0 Message done
 
  Account number 15307 Account Balance 300.0 Message done
@@ -72,8 +74,6 @@
  Account number 52521 Account Balance 7000.0 Message done
 
  Account number 31215 Account Balance 2000.0 Message done
-
- Account number 41911 Account Balance 1500.0 Message done
 
  Account number 41024 Account Balance 1500.0 Message done
 
@@ -89,11 +89,11 @@
 
  Account number 22310 Account Balance 50.0 Message done
 
+ Account number 21117 Account Balance 100.0 Message done
+
  Account number 00925 Account Balance 1000.0 Message done
 
  Account number 31820 Account Balance 1000.0 Message done
-
- Account number 21117 Account Balance 100.0 Message done
 
  Account number 32613 Account Balance 3000.0 Message done
 
@@ -155,14 +155,16 @@
 
  Account number 61612 Account Balance 25.0 Message done
 
- Terminating client sending thread - Running time 365 milliseconds
-
- Account number 61612 Account Balance 100.0 Message done
+ Terminating client sending thread - Running time 348 milliseconds
 
  Account number 92018 Account Balance 100.0 Message done
 
- Terminating client receiving thread - Running time 472 milliseconds
+ Account number 61612 Account Balance 100.0 Message done
 
- Terminating server thread -  Running time 493 milliseconds
+ Terminating client receiving thread - Running time 450 milliseconds
 
- Terminating server thread -  Running time 491 milliseconds
+ Terminating server thread -  Running time 460 milliseconds
+
+ Terminating server thread -  Running time 474 milliseconds
+
+ Terminating network thread - Client disconnected Server disconnected

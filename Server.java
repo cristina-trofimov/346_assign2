@@ -27,6 +27,7 @@ public class Server extends Thread {
 	private String serverThreadId;				 /* Identification of the two server threads - Thread1, Thread2 */
 	private static String serverThreadRunningStatus1;	 /* Running status of thread 1 - idle, running, terminated */
 	private static String serverThreadRunningStatus2;	 /* Running status of thread 2 - idle, running, terminated */
+
   
     /** 
      * Constructor method of Client class
@@ -57,7 +58,8 @@ public class Server extends Thread {
     	else
     	{
     		serverThreadId = stid;							/* unshared variable so each thread has its own copy */
-    		serverThreadRunningStatus2 = "idle";				
+    		serverThreadRunningStatus2 = "idle";
+			
     	}
     }
   
@@ -315,10 +317,10 @@ public class Server extends Thread {
 					} 
 
             	
-        		//  while (Network.getOutBufferStatus().equals("full")) 
-        		//  { 
+        		  //  while (Network.getOutBufferStatus().equals("full")) 
+        		  //  { 
         		// 	 Thread.yield();		/* Yield the cpu if the network output buffer is full */
-        		//  }
+        		  //  }
         		
         		 //System.out.println("\n DEBUG : Server.processTransactions() - transferring out account " + trans.getAccountNumber()); 
         		 

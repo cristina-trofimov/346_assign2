@@ -157,7 +157,7 @@ public class Client extends Thread {
          {  
 	
             // while (Network.getInBufferStatus().equals("full")){ 
-            //     Thread.yield(); 	/* Yield the cpu if the network input buffer is full */
+                    //     Thread.yield(); 	/* Yield the cpu if the network input buffer is full */
             // }
                                               	
             transaction[i].setTransactionStatus("sent");   /* Set current transaction status */
